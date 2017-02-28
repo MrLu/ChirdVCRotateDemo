@@ -14,6 +14,9 @@
 		085F4B3F1E6488DC00140920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085F4B3D1E6488DC00140920 /* LaunchScreen.storyboard */; };
 		085F4B481E64890D00140920 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085F4B471E64890D00140920 /* DetailViewController.m */; };
 		085F4B4B1E6491E200140920 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085F4B4A1E6491E200140920 /* NavViewController.m */; };
+		08641C591E65C2EF00CF0E75 /* PlayerContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08641C581E65C2EF00CF0E75 /* PlayerContainerViewController.m */; };
+		08A808291E65C4AB00EE4B93 /* PlayerLandscapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A808281E65C4AB00EE4B93 /* PlayerLandscapeViewController.m */; };
+		08A8082C1E65E2B900EE4B93 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8082B1E65E2B900EE4B93 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,12 @@
 		085F4B471E64890D00140920 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		085F4B491E6491E200140920 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
 		085F4B4A1E6491E200140920 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
+		08641C571E65C2EF00CF0E75 /* PlayerContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerContainerViewController.h; sourceTree = "<group>"; };
+		08641C581E65C2EF00CF0E75 /* PlayerContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerContainerViewController.m; sourceTree = "<group>"; };
+		08A808271E65C4AB00EE4B93 /* PlayerLandscapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerLandscapeViewController.h; sourceTree = "<group>"; };
+		08A808281E65C4AB00EE4B93 /* PlayerLandscapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerLandscapeViewController.m; sourceTree = "<group>"; };
+		08A8082A1E65E2B900EE4B93 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		08A8082B1E65E2B900EE4B93 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,9 +52,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		083721481E65C03800622CCF /* PlayerContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				083721491E65C04C00622CCF /* class */,
+			);
+			path = PlayerContainerViewController;
+			sourceTree = "<group>";
+		};
+		083721491E65C04C00622CCF /* class */ = {
+			isa = PBXGroup;
+			children = (
+				08641C571E65C2EF00CF0E75 /* PlayerContainerViewController.h */,
+				08641C581E65C2EF00CF0E75 /* PlayerContainerViewController.m */,
+				08A808271E65C4AB00EE4B93 /* PlayerLandscapeViewController.h */,
+				08A808281E65C4AB00EE4B93 /* PlayerLandscapeViewController.m */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
 		085F4B231E6488DC00140920 = {
 			isa = PBXGroup;
 			children = (
+				083721481E65C03800622CCF /* PlayerContainerViewController */,
 				085F4B2E1E6488DC00140920 /* ChirdVCRotateDemo */,
 				085F4B2D1E6488DC00140920 /* Products */,
 			);
@@ -70,6 +99,8 @@
 				085F4B4A1E6491E200140920 /* NavViewController.m */,
 				085F4B461E64890D00140920 /* DetailViewController.h */,
 				085F4B471E64890D00140920 /* DetailViewController.m */,
+				08A8082A1E65E2B900EE4B93 /* TableViewController.h */,
+				08A8082B1E65E2B900EE4B93 /* TableViewController.m */,
 				085F4B3B1E6488DC00140920 /* Assets.xcassets */,
 				085F4B3D1E6488DC00140920 /* LaunchScreen.storyboard */,
 				085F4B401E6488DC00140920 /* Info.plist */,
@@ -159,8 +190,11 @@
 				085F4B371E6488DC00140920 /* ViewController.m in Sources */,
 				085F4B341E6488DC00140920 /* AppDelegate.m in Sources */,
 				085F4B311E6488DC00140920 /* main.m in Sources */,
+				08641C591E65C2EF00CF0E75 /* PlayerContainerViewController.m in Sources */,
 				085F4B481E64890D00140920 /* DetailViewController.m in Sources */,
+				08A808291E65C4AB00EE4B93 /* PlayerLandscapeViewController.m in Sources */,
 				085F4B4B1E6491E200140920 /* NavViewController.m in Sources */,
+				08A8082C1E65E2B900EE4B93 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +345,7 @@
 				085F4B451E6488DC00140920 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

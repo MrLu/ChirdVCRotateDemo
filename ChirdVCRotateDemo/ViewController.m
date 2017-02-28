@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DetailViewController.h"
+#import "TableViewController.h"
 
 @interface ViewController ()
 
@@ -19,14 +20,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"PlayerViewDemo";
+    
     // Do any additional setup after loading the view, typically from a nib.
-    self.btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.btn.frame = CGRectMake(0, 0, 80, 40);
-    self.btn.center = self.view.center;
-    [self.btn setTitle:@"详情" forState:UIControlStateNormal];
-    [self.btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchDown];
-    [self.view addSubview:self.btn];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 150, self.view.bounds.size.width, 40);
+    [btn setTitle:@"详情" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:btn];
+    
+    btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 150+40+40, self.view.bounds.size.width, 40);
+    [btn setTitle:@"列表" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:btn];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,8 +50,13 @@
 
 - (void)btnAction:(UIButton *)sender
 {
-    UIViewController *vc = [DetailViewController new];
-    [self.navigationController pushViewController:vc animated:YES];
+    if([sender.titleLabel.text isEqualToString:@"详情"]) {
+        UIViewController *vc = [DetailViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else {
+        TableViewController *vc = [TableViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (BOOL)shouldAutorotate
