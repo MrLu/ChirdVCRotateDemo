@@ -9,7 +9,7 @@
 >参照腾讯、爱奇艺、搜狐视频、头条等视频展示效果
 
 ##截图
-![screen](https://github.com/MrLu/ChirdVCRotateDemo/tree/master/screen/screen.gif)
+![screen](https://github.com/MrLu/ChirdVCRotateDemo/blob/master/screen/screen.gif)
 
 ##使用:
 ###示例代码
